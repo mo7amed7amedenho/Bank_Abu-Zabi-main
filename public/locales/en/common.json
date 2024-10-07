@@ -1,0 +1,17 @@
+{
+  "navbar": {
+    "home": "Home",
+    "accounts": "Accounts",
+    "cards": "Cards",
+    "loans": "Loans",
+    "digital_services": "Digital Services",
+    "investor_relations": "Investor Relations",
+    "about": "About Bank",
+    "contact_us": "Contact Us"
+  },
+  "buttons": {
+    "open_investor_account": "Open Investor Account"
+  },
+  "welcome": "Welcome to our website!",
+  "description": "This is an English description."
+}
