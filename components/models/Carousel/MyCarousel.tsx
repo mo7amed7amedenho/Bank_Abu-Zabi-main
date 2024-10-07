@@ -72,8 +72,8 @@ const CarouselComponent = () => {
               className="w-full h-[406px] object-cover"
               src="/images/image0.jpg"
               alt="Image 1"
-              width={5000}
-              height={5000}
+              width={1000}
+              height={1000}
             />
             {/* <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white text-3xl font-bold">
               <p>النص فوق الصورة 1</p>
@@ -86,8 +86,8 @@ const CarouselComponent = () => {
               className="w-full h-[406px] object-cover"
               src="/images/image2.jpg"
               alt="Image 2"
-              width={5000}
-              height={5000}
+              width={1000}
+              height={1000}
             />
             {/* <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white text-3xl font-bold">
               <p>النص فوق الصورة 2</p>
@@ -100,8 +100,8 @@ const CarouselComponent = () => {
               className="w-full h-[406px] object-cover"
               src="/images/image1.jpg"
               alt="Image 3"
-              width={5000}
-              height={5000}
+              width={1000}
+              height={1000}
             />
             {/* <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white text-3xl font-bold">
               <p>النص فوق الصورة 3</p>
