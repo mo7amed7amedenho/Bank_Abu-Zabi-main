@@ -9,6 +9,7 @@ import Link from "next/link";
 import { ArrowLeft, PhoneCallIcon } from "lucide-react";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import Footer from "@/components/models/Footer/Footer";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -57,13 +58,15 @@ export default function Home() {
           style={{ backgroundImage: "url('/images/bg.jpeg')" }}
         >
           <div className="flex justify-center items-start align-bottom">
-            <img
+            <Image
               src="/images/Cristiano.png"
               alt=""
               className="w-[250px] z-50 translate-y-[-11.9%]"
               style={{
                 filter: "drop-shadow(0 0 1px #000000)",
               }}
+              width={250}
+              height={250}
             />
           </div>
           <div className="flex flex-col justify-center items-start">
@@ -99,13 +102,15 @@ export default function Home() {
           style={{ backgroundImage: "url('/images/bg.jpeg')" }}
         >
           <div className="flex justify-center items-start align-bottom">
-            <img
+            <Image
               src="/images/Human.png"
               alt=""
               className="w-[230px] px-2 z-50 translate-y-[-9.4%]"
               style={{
                 filter: "drop-shadow(0 0 1px #000000)",
               }}
+              width={230}
+              height={230}
             />
           </div>
           <div className="flex flex-col justify-center items-start">
@@ -121,20 +126,24 @@ export default function Home() {
                 href="https://play.google.com/store/"
                 className="hover:translate-y-[-6px] duration-300"
               >
-                <img
+                <Image
                   src="/images/GooglePlay.png"
                   alt=""
                   className="w-44 pt-8 mx-3"
+                  width={200}
+                  height={200}
                 />
               </Link>
               <Link
                 href="https://www.apple.com/app-store/"
                 className="hover:translate-y-[-6px] duration-300"
               >
-                <img
+                <Image
                   src="/images/AppleStore.png"
                   alt=""
                   className="w-40 pt-8"
+                  width={200}
+                  height={200}
                 />
               </Link>
             </div>

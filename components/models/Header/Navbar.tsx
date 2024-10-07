@@ -4,6 +4,7 @@ import { FaMoneyCheckDollar } from "react-icons/fa6";
 import Link from "next/link";
 import { LucideGlobe2 } from "lucide-react";
 import Button from "@/components/ui/Button";
+import Image from "next/image";
 export default function Navbar() {
   return (
     <>
@@ -39,7 +40,7 @@ export default function Navbar() {
       </div>
       <div className="flex justify-between items-center px-8 py-4 border-b-2 bg-white">
         <nav className="flex justify-start items-center px-8">
-          <img src="/images/logo.png" alt="logo" className="h-10" />
+          <Image src="/images/logo.png" alt="logo" className="h-10" width={150} height={150} />
         </nav>
         <nav className="flex justify-between text-md items-center px-8">
           <Link href="/" className="hover:text-primary duration-300 mx-5">
