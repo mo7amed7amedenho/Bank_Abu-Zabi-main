@@ -4,7 +4,7 @@ interface CardProps {
   icon: ReactNode;
   title: string;
   desc: string;
-  children?: any;
+  children?: ReactNode;
   className?: string;
 }
 const Card: FC<CardProps> = ({ icon, title, desc, children }) => {
