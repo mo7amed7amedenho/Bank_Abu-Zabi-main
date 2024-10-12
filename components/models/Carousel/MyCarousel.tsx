@@ -5,7 +5,6 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "@/components/models/Carousel/custom-swiper-bullet.css";
-import Image from "next/image";
 
 
 // const MyCarousel = dynamic(
@@ -68,7 +67,7 @@ const CarouselComponent = () => {
       >
         <SwiperSlide>
           <div className="relative">
-            <Image
+            <img
               className="w-full h-[406px] object-cover"
               src="/images/image0.jpg"
               alt="Image 1"
@@ -82,7 +81,7 @@ const CarouselComponent = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="relative">
-            <Image
+            <img
               className="w-full h-[406px] object-cover"
               src="/images/image2.jpg"
               alt="Image 2"
@@ -96,7 +95,7 @@ const CarouselComponent = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="relative">
-            <Image
+            <img
               className="w-full h-[406px] object-cover"
               src="/images/image1.jpg"
               alt="Image 3"
