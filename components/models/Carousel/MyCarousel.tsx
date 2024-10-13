@@ -5,12 +5,7 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "@/components/models/Carousel/custom-swiper-bullet.css";
-
-
-// const MyCarousel = dynamic(
-//   () => import("@/components/models/Carousel/MyCarousel"),
-//   { ssr: false }
-// );
+import Image from "next/image";
 
 const CarouselComponent = () => {
   const [progress, setProgress] = useState(0);
@@ -49,7 +44,10 @@ const CarouselComponent = () => {
       <Swiper
         modules={[Pagination, Autoplay, Navigation]}
         spaceBetween={20}
-        navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }}
         slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{
@@ -67,44 +65,35 @@ const CarouselComponent = () => {
       >
         <SwiperSlide>
           <div className="relative">
-            <img
+            <Image
               className="w-full h-[406px] object-cover"
-              src="/images/image0.jpg"
+              src="https://i.postimg.cc/8zGphP3k/Image0.jpg"
               alt="Image 1"
               width={1000}
               height={1000}
             />
-            {/* <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white text-3xl font-bold">
-              <p>النص فوق الصورة 1</p>
-            </div> */}
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="relative">
-            <img
+            <Image
               className="w-full h-[406px] object-cover"
-              src="/images/image2.jpg"
+              src="https://i.postimg.cc/7ZNxXr83/Image1.jpg"
               alt="Image 2"
               width={1000}
               height={1000}
             />
-            {/* <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white text-3xl font-bold">
-              <p>النص فوق الصورة 2</p>
-            </div> */}
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="relative">
-            <img
+            <Image
               className="w-full h-[406px] object-cover"
-              src="/images/image1.jpg"
+              src="https://i.postimg.cc/k5X7pYqk/Image2.jpg"
               alt="Image 3"
               width={1000}
               height={1000}
             />
-            {/* <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white text-3xl font-bold">
-              <p>النص فوق الصورة 3</p>
-            </div> */}
           </div>
         </SwiperSlide>
       </Swiper>
